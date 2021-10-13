@@ -34,15 +34,15 @@ ClapTrap :: ClapTrap (string name) : _hitpoints(10), _energy_points(10), _attack
 
 void ClapTrap :: attack (const string &target)
 {
-    std::cout << "ClapTrap" << _name << " attacks " << target << " ,causing  " <<  _attack_damage  << " point of damage" << std::endl;
+    std::cout << "ClapTrap " << _name << " attacks " << target << " ,causing  " <<  _attack_damage  << " point of damage" << std::endl;
 }
 
 void ClapTrap :: takeDamage (unsigned int amount)
 {
-    std::cout << "ClapTrap" << _name << " takes damage for " << amount << " points "  << std::endl;
+    std::cout << "ClapTrap " << _name << " takes damage for " << amount << " points "  << std::endl;
 }
 
 void ClapTrap :: beRepaired (unsigned int amount)
 {
-    std::cout << "ClapTrap" << _name << " been repaired for " << amount << " points" << std::endl;
+    std::cout << "ClapTrap " << _name << " been repaired for " << amount << " points" << std::endl;
 }
