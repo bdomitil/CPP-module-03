@@ -9,19 +9,14 @@ DiamondTrap& DiamondTrap ::  operator=(DiamondTrap &second)
     return (*this);
 }
 
-DiamondTrap :: DiamondTrap() : ClapTrap()
+DiamondTrap :: DiamondTrap() : ClapTrap(), ScavTrap(), FragTrap(1)
 {
-    DiamondTrap :: _hitpoints = FragTrap:: _hitpoints;
-    DiamondTrap :: _energy_points = ScavTrap:: _energy_points;
-    DiamondTrap :: _attack_damage = FragTrap:: _attack_damage;
+
     std::cout << "DiamondTrap defautl constructor here " << std::endl;
 }
 
-DiamondTrap :: DiamondTrap(string name) : ClapTrap(name + "_clap_name"), _name(name)
+DiamondTrap :: DiamondTrap(string name) : ClapTrap(name + "_clap_name"), ScavTrap(), FragTrap(1), _name(name)
 {
-    DiamondTrap :: _hitpoints = FragTrap:: _hitpoints;
-    DiamondTrap :: _energy_points = ScavTrap:: _energy_points;
-    DiamondTrap :: _attack_damage = FragTrap:: _attack_damage;
     std::cout << "DiamondTrap name constructor here " << std::endl;
 }
 

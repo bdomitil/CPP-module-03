@@ -21,6 +21,23 @@ FragTrap :: FragTrap ()
 	
 }
 
+FragTrap :: FragTrap (int)  
+{
+	std::cout << "FragTrap for diamond constructor here " << std::endl;
+	this->_attack_damage = 30;
+	this->_hitpoints = 100;
+	this->_energy_points = 50;
+}
+
+FragTrap :: FragTrap (string name, int)  
+{
+	std::cout << "FragTrap for diamond constructor here " << std::endl;
+	this->_attack_damage = 30;
+	this->_hitpoints = 100;
+	this->_energy_points = 50;
+	this->_name = name;
+}
+
 FragTrap :: FragTrap (string name)
 {
 	std::cout << "FragTrap name constructor here " << std::endl;

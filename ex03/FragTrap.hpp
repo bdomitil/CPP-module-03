@@ -9,6 +9,8 @@ public:
     FragTrap();
     ~FragTrap();
     FragTrap(string name);
+    FragTrap(int);
+    FragTrap(string name, int);
     void highFiveGuys(void);
     void    attack(string const &target);
     FragTrap(FragTrap &copy);
